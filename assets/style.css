@@ -1,0 +1,136 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #2C3A47;
+    font-family: 'Lato', sans-serif;
+}
+
+.app-title{
+    text-align: center;
+    font-size: 4rem;
+}
+.app-title::after{
+    content: "";
+    width: 10%;
+    border-bottom: 2px solid;
+    display: block;
+    margin: 0 auto;
+}
+
+#tweet{
+    width: 75%;
+    margin: 0 auto;
+    border: #58B19F 2px solid ;
+    border-radius: 4px;
+    min-height: 200px;
+    text-align: center;
+}
+
+.form-label{
+    display: block;
+    margin-bottom: 20px;
+    font-size: 38px;
+    font-weight: 900;
+}
+
+.tweet-message{
+    margin: 0 auto;
+    font-size: 1.5rem;
+    border: #FC427B 1px solid;
+    text-decoration: none;
+    width: 90%;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.tweet-btn{
+    border-radius: 5px;
+    border: #58B19F 1px solid;
+    background: #10ac84;
+    font-size: 1.5rem;
+    color: white;
+    transition: 1s;
+    display: block;
+    margin: 0 auto;
+}
+
+.tweet-btn:hover{
+    background: orangered;
+    transform: rotate(180deg) translate(1px,-8px);
+}
+
+#review{
+    border-right: 1px #10ac84 solid;
+    margin: 0 auto;
+}
+.reviews-list{
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.review-item{
+    list-style: none;
+    font-size: 30px;
+    text-align: center;
+    margin: 5rem auto;
+
+}
+
+.review-item:hover{
+    transform: scale(1.8) rotate(2deg) skew(4deg);
+}
+
+.review-item::after{
+    content: "";
+    border-bottom: darkgray 2px dashed;
+    width: 10%;
+    display: block;
+    margin: 5px auto;
+}
+
+
+
+
+
+
+
+/*.half-a-border-on-top {*/
+    /*border-top:1px solid black;*/
+    /*position: relative;*/
+/*}*/
+/*.half-a-border-on-top:after {*/
+    /*padding:0;margin:0;display:block;!* probably not really needed? *!*/
+    /*content: "";*/
+    /*width:50%;*/
+    /*height:1.1px;*/
+    /*background-color:white;*/
+    /*position: absolute;*/
+    /*right:0;*/
+    /*top:-1px;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+.delete-item{
+    visibility: hidden;
+    transition: 1s;
+    position: absolute;
+}
+
+.review-item:hover .delete-item{
+    visibility: visible;
+    margin-left: 20px;
+    color: red;
+    transform: scale(2) rotate(180deg);
+}
+
